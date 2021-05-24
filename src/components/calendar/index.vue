@@ -7,21 +7,13 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import TimeLine from '@/components/calendar/Time.vue';
-import Sticky from 'sticky-js';
 
 @Component({
 	components: {
 		TimeLine,
 	},
 })
-export default class extends Vue {
-	async mounted() {
-		await this.$nextTick();
-		// const elementList: any = document.querySelectorAll('.sticky');
-		const sticky = new Sticky('.sticky');
-		console.log('sticky', sticky);
-	}
-}
+export default class extends Vue {}
 </script>
 
 <style lang="scss" scoped>
